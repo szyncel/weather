@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Weather</title>
+</head>
+
+<body>
+    <h1>Twoja prognoza pogody</h1>
+    <!-- <p id="loc"></p> -->
+    <div id="start">Sprawdź pogodę dla swojego miasta</div>
+    <div class="container">
+        <p><b>Miasto: </b><span id="city"></span> <span id="country"></span></p>
+
+        <p><b>Stopnie: </b><span id="temp"></span></p>
+        <p><b>Pogoda: </b><span id="weather"></span></p>
+        <img src="https://cdn.glitch.com/6e8889e5-7a72-48f0-a061-863548450de5%2F01d.png?1499366022009" alt="cloud">
+
+        <p><b>Ciśnienie: </b><span id="pressure"></span></p>
+
+
+    </div>
+    <div class="loading">
+        <div class="lds-css ng-scope">
+            <div style="width:100%;height:100%" class="lds-rolling">
+                <div></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/modernizr-geolocation.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

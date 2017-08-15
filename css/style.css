@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 60%;
+    margin: 0 auto;
+    background: #00d2ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: #222;
+    text-shadow: 0px 2px 3px #555;
+}
+
+.container {
+    color: #222;
+    text-shadow: 0px 1px 2px #555;
+    font-size: 22px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(0, 0, 0, 0.40);
+    border-radius: 10px;
+}
+
+span {
+    font-size: 26px;
+}
+
+b {
+    color: #E3E3E3;
+    font-size: 20px;
+}
+
+#start {
+    padding-top: 10px;
+    cursor: pointer;
+    width: 40%;
+    height: 90px;
+    font-size: 26px;
+    margin: 0 auto;
+    color: #222;
+    text-align: center;
+    top: 240px;
+    left: 240px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.40);
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    /* top: 400px;
+    left: 0;
+    bottom: 0;
+    right: 0; */
+}
+
+#start:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* .....................loader........................ */
+
+.loading {
+    position: fixed;
+    z-index: 999;
+    height: 2em;
+    width: 2em;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@keyframes lds-rolling {
+    0% {
+        -webkit-transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@-webkit-keyframes lds-rolling {
+    0% {
+        -webkit-transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.lds-rolling {
+    position: relative;
+}
+
+.lds-rolling div,
+.lds-rolling div:after {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border: 20px solid #28292f;
+    border-top-color: transparent;
+    border-radius: 50%;
+}
+
+.lds-rolling div {
+    -webkit-animation: lds-rolling 1.7s linear infinite;
+    animation: lds-rolling 1.7s linear infinite;
+    top: 100px;
+    left: 100px;
+}
+
+.lds-rolling div:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.lds-rolling {
+    width: 80px !important;
+    height: 80px !important;
+    -webkit-transform: translate(-40px, -40px) scale(0.4) translate(40px, 40px);
+    transform: translate(-40px, -40px) scale(0.4) translate(40px, 40px);
+}
